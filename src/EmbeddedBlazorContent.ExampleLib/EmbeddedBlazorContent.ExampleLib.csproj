@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <IsPackable>true</IsPackable>
     <OutputType>Library</OutputType>
     <LangVersion>8.0</LangVersion>
@@ -16,9 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="3.1.0-preview1.19506.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="3.1.0-preview1.19506.1" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="3.1.0-preview1.19506.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="$(BlazorVersion)" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="$(BlazorVersion)" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.HttpClient" Version="$(BlazorVersion)" />
   </ItemGroup>
 
 </Project>
